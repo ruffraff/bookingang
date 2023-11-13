@@ -1,0 +1,18 @@
+<mat-card class="card-login">
+   
+    <mat-card-content>
+      <form (submit)="onSubmit($event)" class="form-login">
+        <mat-form-field appearance="fill">
+             
+            <input matInput (input)="onEmailChange($event)" type="email"   required placeholder="Enter your username"/>
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+            
+            <input matInput (input)="onPasswordChange($event)" type="password"   required placeholder="Enter your password"/>
+        </mat-form-field>
+        <br><br>
+        <button mat-raised-button class="btn-login" type="submit">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>

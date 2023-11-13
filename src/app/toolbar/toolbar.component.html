@@ -1,0 +1,34 @@
+<!-- File: toolbar.component.html -->
+<mat-toolbar  class="custom-toolbar">
+    <mat-toolbar-row>
+      <img src="/assets/images/logo.png" alt="Logo" class="logo">
+      
+      <span class="spacer"></span>
+      <span class="titolo">{{'Casa Vacanze' | uppercase}}</span>
+      <span class="spacer"></span>
+      <a mat-button  color="primary" class="custom-booking-button" routerLink="/apartment" >House</a>
+      
+     
+      <span class="spacer"></span>
+      <a mat-raised-button  color="primary" class="custom-booking-button" routerLink="/contact">
+        <mat-icon>mail_outline</mat-icon> Contact
+       </a>
+      <span class="spacer"></span>
+      <a mat-raised-button color="primary" class="custom-booking-button" routerLink="/booking"  *ngIf="authService.isLoggedIn()">
+       Booking
+      </a>
+      <span class="spacer"></span>
+      <a mat-raised-button  color="primary" class="custom-booking-button" routerLink="/login" *ngIf="!authService.isLoggedIn()">
+        <mat-icon>login</mat-icon> Login
+      </a>
+      <span class="spacer-min"></span>
+      <a mat-raised-button  color="primary" class="custom-booking-button" routerLink="/register" *ngIf="!authService.isLoggedIn()">
+      <mat-icon>person_add</mat-icon> Registrati
+      </a>
+      <span class="spacer"></span>
+      <a mat-raised-button  color="primary" class="custom-booking-button" (click)="clickLogout($event)" routerLink="/login" *ngIf="authService.isLoggedIn()">
+        <mat-icon>logout</mat-icon> Logout
+      </a>
+    </mat-toolbar-row>
+</mat-toolbar>
+  

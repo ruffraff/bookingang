@@ -1,0 +1,77 @@
+.table-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background-color: #ffffff; /* Pale background inspired by ceramic texture */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Table base styling inspired by Vietri tiles colors */
+table[mat-table] {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  background-color: #ffffff; /* Pale background inspired by ceramic texture */
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.mat-header-row {
+  background-color: #0077B6; /* Vivid blue from Vietri tiles */
+  color: white;
+}
+
+.mat-header-cell {
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+/* Row styling */
+.mat-row {
+  transition: background-color 0.3s;
+}
+
+.mat-row:hover {
+  background-color: #ffffff; /* A muted shade inspired by ceramic glaze for hover effect */
+}
+
+/* Cell styling */
+.mat-cell {
+  padding: 8px 16px;
+}
+
+/* Action buttons in the "Actions" column */
+.mat-cell button[mat-button] {
+  margin-right: 8px;
+  border: none;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+/* Details button */
+.mat-cell button[mat-button]:nth-child(1) {
+  background-color: #0077B6; /* Consistent with Vietri blue */
+}
+
+.mat-cell button[mat-button]:nth-child(1):hover {
+  background-color: #005994; /* Slightly darker shade on hover */
+}
+
+/* Update button */
+.mat-cell button[mat-button]:nth-child(2) {
+  background-color: #DAA520; /* Goldish hue from Vietri tiles */
+}
+
+.mat-cell button[mat-button]:nth-child(2):hover {
+  background-color: #B8860B; /* Darker gold shade on hover */
+}
+
+/* Delete button */
+.mat-cell button[mat-button]:nth-child(3) {
+  background-color: #8B0000; /* Deep red, a common shade in Vietri decorations */
+}
+
+.mat-cell button[mat-button]:nth-child(3):hover {
+  background-color: #6A0000; /* Even darker shade for emphasis on hover */
+}

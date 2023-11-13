@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('assets/images/sfondo.png'); /* Sostituisci 'url-dell-immagine.jpg' con l'URL o il percorso dell'immagine del tuo sfondo */
+    background-size: cover; /* Copri tutto lo sfondo */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    background-attachment: fixed; /* Fissa lo sfondo in modo che non scorra con la pagina */
+    background-position: center center; /* Centra l'immagine del background */
+    background-color: #ffffff; /* Colore di sfondo in caso l'immagine non sia caricata o sia trasparente */
+    font-family: Arial, sans-serif; /* Tipo di carattere predefinito */
+    margin: 0; /* Rimuovi il margine predefinito del corpo */
+    padding: 0; /* Rimuovi il padding predefinito del corpo */
+  }

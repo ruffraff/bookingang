@@ -1,0 +1,55 @@
+/* Toolbar styles inspired by Vietri tiles colors */
+.custom-toolbar {
+  background-color: #0076b670; /* Vivid blue from Vietri tiles */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.titolo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.spacer, .spacer-min {
+  display: inline-block;
+}
+
+.spacer {
+  width: 1rem;
+}
+
+.spacer-min {
+  width: 0.5rem;
+}
+
+.custom-booking-button {
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+mat-icon {
+  vertical-align: middle;
+}
+
+/* Adjusting link colors for better visibility against the background */
+.custom-toolbar a {
+  color: #FFD166; /* Vibrant yellow from Vietri tiles */
+  text-decoration: none;
+}
+
+.custom-toolbar a:hover {
+  color: #E9C46A; /* Slightly darker shade of yellow for hover effect */
+}
+
+.logo {
+  height: 100px;
+  margin-right: 20px;
+  vertical-align: middle;
+}

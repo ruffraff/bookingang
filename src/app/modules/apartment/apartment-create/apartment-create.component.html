@@ -1,0 +1,40 @@
+<div class="form-container">
+  <form [formGroup]="apartmentForm" (ngSubmit)="createApartment()">
+
+    <ng-container *ngIf="apartmentForm">
+      <mat-form-field appearance="fill" class="field-container">
+        <input matInput formControlName="name" placeholder="Name">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="field-container">
+        <input matInput formControlName="description" placeholder="Description">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="field-container">
+        <input matInput formControlName="address" placeholder="Address">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="field-container">
+        <input matInput type="number" formControlName="price_per_night" placeholder="Price Per Night">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="field-container">
+        <input matInput type="number" formControlName="bedrooms" placeholder="Bedrooms">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="field-container">
+        <input matInput type="number" formControlName="bathrooms" placeholder="Bathrooms">
+      </mat-form-field>
+
+      <!-- Optional file input for photos -->
+      <div class="field-container">
+        <input type="file" (change)="onFileChange($event)">
+      </div>
+
+      <div class="field-container">
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </div>
+    </ng-container>
+
+  </form>
+</div>

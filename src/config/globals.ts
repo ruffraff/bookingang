@@ -1,0 +1,11 @@
+///////////////////////////////////////////////////////////
+// For DEVELOP environment: vdesk-demo.liveboxcloud.com //
+//////////////////////////////////////////////////////////
+export let globals = {
+    endpoint: '',
+    jwtEnabled: false,
+    isNoSTD: false
+  };
+  
+  
+  

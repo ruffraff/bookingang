@@ -1,0 +1,52 @@
+
+  
+ 
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    background-color: #3592df; /* Pale background inspired by ceramic texture */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem; /* Padding inside the form container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Form Field styling */
+  mat-form-field {
+    width: 85%;
+    margin-bottom: 1rem;
+    background-color: #abccef; /* Consistent with the table background */
+    border-radius: 8px;
+  }
+  
+  /* Input styling */
+  mat-form-field input {
+    border: 1px solid #4e8cf0; /* Border for the input fields */
+  }
+  
+  /* Button styling consistent with the table action buttons */
+  button[mat-raised-button] {
+    margin-top: 1rem;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  /* Submit button */
+  button[mat-raised-button][color="primary"] {
+    background-color: #0077B6; /* Consistent with Vietri blue */
+  }
+  
+  button[mat-raised-button][color="primary"]:hover {
+    background-color: hsl(204, 69%, 45%); /* Slightly darker shade on hover */
+  }
+  
+  

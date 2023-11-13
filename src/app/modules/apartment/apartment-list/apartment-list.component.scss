@@ -1,0 +1,84 @@
+/* Base styling for the table inspired by Vietri tiles colors */
+.table-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background-color: #ffffff6b; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table[mat-table].mat-elevation-z8 {
+  width: 100%; 
+  border-radius: 8px;
+  background-color: #ffffff00; 
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.mat-header-row {
+  background-color: #0076b648; 
+  color: rgb(255, 255, 255);
+}
+
+.mat-header-cell, .mat-cell {
+  padding: 8px 16px;
+  width: auto;  /* Aggiunto per garantire la stessa larghezza */
+  flex: 1 1 auto;  /* Aggiunto per bilanciare la larghezza delle colonne */
+  overflow: hidden;  /* Tronca il testo troppo lungo */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Row styling */
+.mat-row {
+  transition: background-color 0.3s;
+}
+
+.mat-row:hover {
+  background-color: #ffffff00; 
+}
+
+/* In case of any action buttons */
+
+/* Details button */
+.mat-cell button[mat-button]:nth-child(1) {
+  margin-right: 8px;
+  border: none;
+  background-color: #0077B6; 
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.mat-cell button[mat-button]:nth-child(1):hover {
+  background-color: #005994; 
+}
+
+/* Update button */
+.mat-cell button[mat-button]:nth-child(2) {
+  margin-right: 8px;
+  border: none;
+  background-color: #DAA520; 
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.mat-cell button[mat-button]:nth-child(2):hover {
+  background-color: #B8860B; 
+}
+
+/* Delete button */
+.mat-cell button[mat-button]:nth-child(3) {
+  margin-right: 8px;
+  border: none;
+  background-color: #8B0000; 
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.mat-cell button[mat-button]:nth-child(3):hover {
+  background-color: #6A0000; 
+}
